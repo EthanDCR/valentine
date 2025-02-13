@@ -14,12 +14,16 @@
   box-sizing: border-box;
 }
 
+
 html {
   font-size: 62.5%;
   line-height: 1.6rem;
-  font-family: "Pacifico", cursive;
+  font-family: Arial, sans-serif;
+  /* Simpler, more readable font */
   height: 100vh;
 }
+
+
 
 html::-webkit-scrollbar {
   width: 2px;
@@ -55,6 +59,7 @@ canvas {
   from {
     background-image: linear-gradient(to left, #5998C5, #419D78);
   }
+
   to {
     background-image: linear-gradient(to top, #5998C5, #419D78);
   }
@@ -265,8 +270,10 @@ canvas {
 
 .spinner {
   position: absolute;
-  left: 50%; /* centers the loading animation horizontally one the screen */
-  top: 50%; /* centers the loading animation vertically one the screen */
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
   width: 50px;
   height: 30px;
   text-align: center;
@@ -289,6 +296,7 @@ canvas {
   width: 50px;
   height: 50px;
 }
+
 .dashed-loading:before {
   /* z-index: 5; */
   border: 3px dashed #5998C5;
@@ -297,6 +305,7 @@ canvas {
   -webkit-animation: dashed 1s linear infinite;
   animation: dashed 1s linear infinite;
 }
+
 .dashed-loading:after {
   /* z-index: 10; */
   border: 3px solid #5998C5;
@@ -305,6 +314,7 @@ canvas {
   -webkit-animation: dashed 1s ease infinite;
   animation: dashed 1s ease infinite;
 }
+
 @keyframes dashed {
   to {
     transform: rotate(360deg);
